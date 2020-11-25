@@ -59,4 +59,6 @@ public class Mainmenü : MonoBehaviour
         Application.Quit();
 
     }
+
+    //deneme 123 abc//
 }
