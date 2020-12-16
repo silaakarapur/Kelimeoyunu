@@ -379,8 +379,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232312956604703329, guid: fef61b3882703a64293e184be5f6cac3,
-          type: 3}
+      - m_Target: {fileID: 960342605}
         m_MethodName: LevelPanelegir
         m_Mode: 1
         m_Arguments:
@@ -669,12 +668,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 960342604}
         m_MethodName: 
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -798,7 +797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 134149.53, y: 101389.195, z: -2083754}
+  m_LocalPosition: {x: -1679.4844, y: -9202.969, z: -77328.375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 58694361}
@@ -854,7 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 960342604}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &568865463
@@ -1150,7 +1149,6 @@ GameObject:
   - component: {fileID: 866255530}
   - component: {fileID: 866255532}
   - component: {fileID: 866255531}
-  - component: {fileID: 866255533}
   m_Layer: 5
   m_Name: Anamenupanel
   m_TagString: Untagged
@@ -1219,21 +1217,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866255529}
   m_CullTransparentMesh: 0
---- !u!114 &866255533
+--- !u!1 &960342604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960342606}
+  - component: {fileID: 960342605}
+  m_Layer: 0
+  m_Name: AnaMenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &960342605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866255529}
+  m_GameObject: {fileID: 960342604}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6f433068bdad144c8cc1142a7ab982d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelPanel: {fileID: 1843754372}
-  Anamenupaneli: {fileID: 1843754372}
-  SettingPanel: {fileID: 1843754372}
+  LevelPanel: {fileID: 1384211151}
+  Anamenupaneli: {fileID: 866255529}
+  SettingPanel: {fileID: 165193947}
+--- !u!4 &960342606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960342604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9003653, y: 0.39026517, z: -1.8232269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1384211151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,8 +1420,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232312956604703329, guid: fef61b3882703a64293e184be5f6cac3,
-          type: 3}
+      - m_Target: {fileID: 960342605}
         m_MethodName: "\xE7\u0131k\u0131\u015F"
         m_Mode: 1
         m_Arguments:
@@ -1525,8 +1553,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 232312956604703329, guid: fef61b3882703a64293e184be5f6cac3,
-          type: 3}
+      - m_Target: {fileID: 960342605}
         m_MethodName: SettingPanelegir
         m_Mode: 1
         m_Arguments:
@@ -1578,12 +1605,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539747670}
   m_CullTransparentMesh: 0
---- !u!1 &1843754372 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2466981460281554173, guid: fef61b3882703a64293e184be5f6cac3,
-    type: 3}
-  m_PrefabInstance: {fileID: 4089254420106131201}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1995349024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,98 +1683,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995349024}
   m_CullTransparentMesh: 0
---- !u!1001 &4089254420106131201
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 232312956604703329, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: LevelPanel
-      value: 
-      objectReference: {fileID: 1384211151}
-    - target: {fileID: 232312956604703329, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: "Anamen\xFCpanel"
-      value: 
-      objectReference: {fileID: 866255529}
-    - target: {fileID: 232312956604703329, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: SettingPanel
-      value: 
-      objectReference: {fileID: 165193947}
-    - target: {fileID: 232312956604703329, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: Anamenupanel
-      value: 
-      objectReference: {fileID: 866255529}
-    - target: {fileID: 232312956604703329, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: Anamenupaneli
-      value: 
-      objectReference: {fileID: 866255529}
-    - target: {fileID: 2466981460281554173, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_Name
-      value: "AnaMen\xFCManager"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.9003653
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.39026517
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.8232269
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777141796959704390, guid: fef61b3882703a64293e184be5f6cac3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8273494871296351494, guid: fef61b3882703a64293e184be5f6cac3, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: fef61b3882703a64293e184be5f6cac3, type: 3}

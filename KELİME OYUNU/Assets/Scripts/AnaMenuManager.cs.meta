@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c6f433068bdad144c8cc1142a7ab982d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - LevelPanel: {fileID: 2466981460281554173, guid: fef61b3882703a64293e184be5f6cac3,
+      type: 3}
+  - Anamenupanel: {fileID: 2466981460281554173, guid: fef61b3882703a64293e184be5f6cac3,
+      type: 3}
+  - SettingPanel: {fileID: 2466981460281554173, guid: fef61b3882703a64293e184be5f6cac3,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
