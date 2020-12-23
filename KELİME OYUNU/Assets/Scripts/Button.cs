@@ -9,7 +9,7 @@ public class Button : MonoBehaviour
     Image renk;
 
     string harf;
-    bool harfverildi = false;
+    bool harf_verildi = false;
 
     public bool yokol = false;
 
@@ -17,13 +17,30 @@ public class Button : MonoBehaviour
     {
         yonet = GameObject.Find("OyunOynama").GetComponent<OyunOynama>();
         renk = GetComponent<Image>();
-        harf = GameObject.name;
+        
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (yonet.tiklandi == false)
+        {
+            harf_verildi = false;
+            renk.color = Color.white;
+        }
+
+
+    }
+    public void Yesil_ol()
+    {
+        if (yonet.tiklandi == true)
+        {
+         renk.color = Color.green;
+            if (harf_verildi == false)
+            {
+                yonet.Isaretli_buton_olustur(gameObject);
+                harf_verildi = true;
+            }
+        }
     }
 }

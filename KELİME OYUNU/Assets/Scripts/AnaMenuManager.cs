@@ -24,6 +24,10 @@ public class AnaMenuManager : MonoBehaviour
     {
         
     }
+    public void Oyunubaslat()
+    {
+        SceneManager.LoadScene("level1");
+    }
     public void levelpaneldenanamenuye(){
         LevelPanel.SetActive(false);
         Anamenupaneli.SetActive(true);

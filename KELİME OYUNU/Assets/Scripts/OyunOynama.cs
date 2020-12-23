@@ -11,42 +11,54 @@ public class OyunOynama : MonoBehaviour
     public Text puan_txt;
     public bool tiklandi = false;
     int puan = 0;
-    int bulunankelimesayisi=0;
-    List<GameObject> isaretlibutonlar;
+    int bulunan_kelime_sayisi=0;
+    List<GameObject> Isaretlibutonlar;
     void Start()
     {
-        isaretlibutonlar = new List<GameObject>();
+        Isaretlibutonlar = new List<GameObject>();
     }
 
+    public void Isaretli_buton_olustur(GameObject buton)
+    {
+        Isaretlibutonlar.Add(buton);
+        kelime = null;
+        foreach(GameObject butonlar in Isaretlibutonlar)
+        {
+            kelime = kelime + butonlar.name;
+            puan_txt.text = kelime;        }
+     }
     
     void Update()
     {
-        if (Input.GetButtonDown("0"))
+        if (Input.GetButtonDown("Horizontal"))
         {
             tiklandi = true;
         }
-        if (Input.GetButtonUp("0"))
+        if (Input.GetButtonUp("Horizontal"))
         {
             tiklandi = false;
-            yaziolustur();
+            Yaziolustur();
             puan_txt.text = puan.ToString();
 
         }
     }
 
-    void yaziolustur()
+    void Yaziolustur()
     {
         foreach(string kelimeler in sozluk)
         {
             if (kelimeler == kelime)
             {
                 puan += 100;
-                bulunankelimesayisi++;
-                foreach(GameObject buton in isaretlibutonlar)
+                bulunan_kelime_sayisi++;
+                foreach(GameObject buton in Isaretlibutonlar)
                 {
-                   
+                    buton.GetComponent<Button>().yokol = true;
                 }
             }
         }
+        Isaretlibutonlar.Clear();
+        kelime = null;
+       
     }
 }
