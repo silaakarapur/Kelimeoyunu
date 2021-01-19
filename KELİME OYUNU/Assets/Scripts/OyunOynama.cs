@@ -9,9 +9,9 @@ public class OyunOynama : MonoBehaviour
     public string[] sozluk;
     string kelime = null;
     public Text puan_txt;
+    int bulunanKelimeSayisi = 0;
     public bool tiklandi = false;
     int puan = 0;
-    int bulunan_kelime_sayisi=0;
     List<GameObject> Isaretlibutonlar;
     void Start()
     {
@@ -30,11 +30,11 @@ public class OyunOynama : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButtonDown("Horizontal"))
+        if (Input.GetMouseButtonDown(0))
         {
             tiklandi = true;
         }
-        if (Input.GetButtonUp("Horizontal"))
+        if (Input.GetMouseButtonUp(0))
         {
             tiklandi = false;
             Yaziolustur();
@@ -50,7 +50,7 @@ public class OyunOynama : MonoBehaviour
             if (kelimeler == kelime)
             {
                 puan += 100;
-                bulunan_kelime_sayisi++;
+                bulunanKelimeSayisi++;
                 foreach(GameObject buton in Isaretlibutonlar)
                 {
                     buton.GetComponent<Button>().yokol = true;

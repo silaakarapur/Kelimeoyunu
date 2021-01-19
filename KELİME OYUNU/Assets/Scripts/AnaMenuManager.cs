@@ -28,7 +28,7 @@ public class AnaMenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("level1");
     }
-    public void levelpaneldenanamenuye(){
+    public void Levelpaneldenanamenuye(){
         LevelPanel.SetActive(false);
         Anamenupaneli.SetActive(true);
     }
@@ -45,7 +45,7 @@ public class AnaMenuManager : MonoBehaviour
         SettingPanel.SetActive(true);
     }
     
-    public void çıkış(){
+    public void Çıkış(){
         Application.Quit();
     }
 }
